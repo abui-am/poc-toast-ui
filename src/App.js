@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import { Editor, Viewer } from '@toast-ui/react-editor';
+import { Editor } from '@toast-ui/react-editor';
 import '@toast-ui/editor/dist/toastui-editor.css';
 import './App.css';
 
@@ -19,7 +18,7 @@ function App() {
 
   useEffect(() => {
     editorRef?.current?.getInstance().setMarkdown(data);
-  }, [data]);
+  }, [data, editorRef]);
 
   return (
     <div className='App'>

@@ -1,5 +1,5 @@
 import { Viewer } from '@toast-ui/react-editor';
-import React, { createRef, useState } from 'react';
+import React, { createRef } from 'react';
 
 const Test = ({ content }) => {
   const viewerRef = createRef();
